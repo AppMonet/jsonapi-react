@@ -34,6 +34,7 @@ export function useQuery(queryArg, config) {
     onSuccess,
     onError,
     initialData,
+    headers,
     hydrate,
   } = {
     ...useApiContext(),
@@ -55,6 +56,7 @@ export function useQuery(queryArg, config) {
       force: true,
       cacheTime,
       hydrate,
+      headers
     })
   }
 
