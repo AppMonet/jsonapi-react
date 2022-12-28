@@ -243,7 +243,6 @@ export class ApiClient {
       type: actions.REQUEST_MUTATION,
       ...data,
     })
-
     let result = await this.request(query.url, options)
     let schema = result
 
@@ -288,7 +287,7 @@ export class ApiClient {
           q.cache = null
 
           if (q.subscribers.length) {
-            this.fetch(q, { force: true })
+            this.fetch(q, { force: true, ...options })
           }
         }
       })

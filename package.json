@@ -1,6 +1,6 @@
 {
   "name": "@appmonet/jsonapi-react",
-  "version": "0.0.27",
+  "version": "0.0.31",
   "description": "A minimal JSON:API client and React hooks for fetching, updating, and caching remote data.",
   "author": "aribouius",
   "license": "MIT",
